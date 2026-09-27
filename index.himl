@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>প্রাকৃতিক স্বাদ - ১০০% খাঁটি ও প্রাকৃতিক খাদ্য</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- হেডার ও নেভিগেশন -->
+    <header>
+        <div class="container navbar">
+            <h1 class="logo">প্রাকৃতিক স্বাদ</h1>
+            <nav>
+                <a href="#home">হোম</a>
+                <a href="#products">প্রোডাক্টসমূহ</a>
+                <a href="#about">আমাদের সম্পর্কে</a>
+                <a href="#order-form" class="btn-primary">অর্ডার করুন</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- হিরো সেকশন -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>প্রকৃতির আসল স্বাদ আপনার দরজায়</h2>
+            <p>আমরা সরবরাহ করি ১০০% খাঁটি সুন্দরবনের মধু, প্রিমিয়াম খেজুরের গুড়, খাঁটি গাওয়া ঘি এবং কেমিক্যালমুক্ত তরতাজা আম।</p>
+            <a href="#products" class="btn-main">প্রোডাক্ট দেখুন</a>
+        </div>
+    </section>
+
+    <!-- প্রোডাক্ট সেকশন -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2 class="section-title">আমাদের প্রিমিয়াম প্রোডাক্টসমূহ</h2>
+            <div class="product-grid">
+
+                <!-- প্রোডাক্ট ১: খাঁটি মধু -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1587049352847-4a222e784d38?auto=format&fit=crop&w=500&q=80" alt="খাঁটি মধু">
+                    <h3>খাঁটি প্রাকৃতিক মধু</h3>
+                    <p class="description">সুন্দরবন ও প্রাকৃতিকভাবে সংগৃহীত ১০০% প্রসেসিংমুক্ত ও খাঁটি মধু।</p>
+                    <p class="price">৳ ৭৫০ / কেজি</p>
+                    <button onclick="selectProduct('খাঁটি প্রাকৃতিক মধু (৳ ৭৫০/কেজি)')" class="btn-order">অর্ডার করুন</button>
+                </div>
+
+                <!-- প্রোডাক্ট ২: খেজুরের গুড় -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=500&q=80" alt="খাঁটি খেজুরের গুড়">
+                    <h3>প্রিমিয়াম খেজুরের গুড়</h3>
+                    <p class="description">যশোর ও রাজশাহীর ঐতিহ্যবাহী ভেজালমুক্ত পাটালি ও ঝোলা গুড়।</p>
+                    <p class="price">৳ ৪০০ / কেজি</p>
+                    <button onclick="selectProduct('প্রিমিয়াম খেজুরের গুড় (৳ ৪০০/কেজি)')" class="btn-order">অর্ডার করুন</button>
+                </div>
+
+                <!-- প্রোডাক্ট ৩: গাওয়া ঘি -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=500&q=80" alt="গাওয়া ঘি">
+                    <h3>গাওয়া ঘি (গাভীর দুধের)</h3>
+                    <p class="description">পারম্পরিক পদ্ধতিতে তৈরি সুবাসিত ও পুষ্টিকর খাঁটি গাওয়া ঘি।</p>
+                    <p class="price">৳ ১,৪০০ / কেজি</p>
+                    <button onclick="selectProduct('গাওয়া ঘি (৳ ১,৪০০/কেজি)')" class="btn-order">অর্ডার করুন</button>
+                </div>
+
+                <!-- প্রোডাক্ট ৪: কেমিক্যালমুক্ত আম -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=500&q=80" alt="কেমিক্যালমুক্ত আম">
+                    <h3>কেমিক্যালমুক্ত আম (মৌসুমী)</h3>
+                    <p class="description">রাজশাহী ও চাপাইনবাবগঞ্জের সরাসরি বাগান থেকে সংগৃহীত সুস্বাদু আম।</p>
+                    <p class="price">৳ ১২০ / কেজি</p>
+                    <button onclick="selectProduct('কেমিক্যালমুক্ত আম (৳ ১২০/কেজি)')" class="btn-order">অর্ডার করুন</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- কাস্টম অর্ডার ফর্ম সেকশন -->
+    <section id="order-form" class="order-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <h2>অর্ডার করতে ফর্মটি পূরণ করুন</h2>
+                <p>ফর্মটি জমা দিলে সরাসরি আমাদের হোয়াটসঅ্যাপে আপনার অর্ডার তথ্যটি পৌঁছে যাবে।</p>
+
+                <form onsubmit="sendOrder(event)">
+                    <div class="form-group">
+                        <label for="product">প্রোডাক্ট নির্বাচন করুন *</label>
+                        <select id="product" required>
+                            <option value="">-- প্রোডাক্ট সিলেক্ট করুন --</option>
+                            <option value="খাঁটি প্রাকৃতিক মধু (৳ ৭৫০/কেজি)">খাঁটি প্রাকৃতিক মধু (৳ ৭৫০/কেজি)</option>
+                            <option value="প্রিমিয়াম খেজুরের গুড় (৳ ৪০০/কেজি)">প্রিমিয়াম খেজুরের গুড় (৳ ৪০০/কেজি)</option>
+                            <option value="গাওয়া ঘি (৳ ১,৪০০/কেজি)">গাওয়া ঘি (৳ ১,৪০০/কেজি)</option>
+                            <option value="কেমিক্যালমুক্ত আম (৳ ১২০/কেজি)">কেমিক্যালমুক্ত আম (৳ ১২০/কেজি)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">পরিমাণ (কেজি/গ্রাম/প্যাকেট) *</label>
+                        <input type="text" id="quantity" placeholder="যেমন: ১ কেজি" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">আপনার নাম *</label>
+                        <input type="text" id="name" placeholder="আপনার পুরো নাম লিখুন" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">মোবাইল নম্বর *</label>
+                        <input type="tel" id="phone" placeholder="০১৭xxxxxxxx" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">ডেলিভারি ঠিকানা *</label>
+                        <textarea id="address" rows="3" placeholder="গ্রাম/রাস্তা, থানা, জেলাসহ পূর্ণাঙ্গ ঠিকানা দিন" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="note">বিশেষ দ্রষ্টব্য / নোট (ঐচ্ছিক)</label>
+                        <textarea id="note" rows="2" placeholder="অর্ডার সংক্রান্ত অতিরিক্ত তথ্য থাকলে লিখুন"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">অর্ডার কনফার্ম করুন (WhatsApp)</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- আমাদের সম্পর্কে -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>কেন 'প্রাকৃতিক স্বাদ' বেছে নেবেন?</h2>
+            <p>আমরা কোনো প্রকার কেমিক্যাল বা কৃত্রিম উপাদান ছাড়াই সরাসরি উৎস থেকে পণ্য সংগ্রহ করি। গুণগত মান ও গ্রাহকের স্বাস্থ্যই আমাদের প্রধান অগ্রাধিকার।</p>
+        </div>
+    </section>
+
+    <!-- ফুটার -->
+    <footer>
+        <div class="container">
+            <p>&copy; ২০২৬ প্রাকৃতিক স্বাদ। সর্বস্বত্ব সংরক্ষিত।</p>
+        </div>
+    </footer>
+
+    <!-- অর্ডার প্রসেসিং স্ক্রিপ্ট -->
+    <script>
+        function selectProduct(productName) {
+            document.getElementById('product').value = productName;
+            document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function sendOrder(event) {
+            event.preventDefault();
+
+            // আপনার হোয়াটসঅ্যাপ নম্বর
+            const myPhoneNumber = "8801335556732"; 
+
+            const product = document.getElementById('product').value;
+            const quantity = document.getElementById('quantity').value;
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+            const note = document.getElementById('note').value;
+
+            let message = `*নতুন অর্ডার এসেছে (প্রাকৃতিক স্বাদ)*%0A%0A`;
+            message += `*প্রোডাক্ট:* ${product}%0A`;
+            message += `*পরিমাণ:* ${quantity}%0A`;
+            message += `------------------------%0A`;
+            message += `*গ্রাহকের নাম:* ${name}%0A`;
+            message += `*ফোন নম্বর:* ${phone}%0A`;
+            message += `*ঠিকানা:* ${address}%0A`;
+            if (note) {
+                message += `*নোট:* ${note}%0A`;
+            }
+
+            const whatsappUrl = `https://wa.me/${myPhoneNumber}?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
